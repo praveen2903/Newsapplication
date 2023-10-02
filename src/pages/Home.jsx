@@ -1,12 +1,35 @@
-import FetchFeed from "../components/FetchFeed"
+import axios from "axios";
+import { useEffect, useState } from "react";
+import NewsFeed from "../components/NewsFeed";
 
 const Home = () => {
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    const getArticles = async () => {
+      const response = await axios.get(
+        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
+      );
+      setArticles(response.data.articles);
+    };
+    getArticles();
+  }, []);
+  
   return (
-    <div className="m-0 p-5 font-serif text-4xl">
-        Home
-        <FetchFeed/>
+    <div>
+      <h1>Home</h1>
+      {articles.map((article) => {
+        return (
+          <NewsFeed
+            title={article.title}
+            description={article.description}
+            url={article.url}
+            urlToImage={article.urlToImage}
+            author={article.author}
+          />
+        );
+      })}
     </div>
-  )
+  );
 }
 
 export default Home
