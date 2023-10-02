@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NewsFeed from "./NewsFeed";
 const BusinessFeed = () => {
-  const [articles, setArticels] = useState([]);
+  const [articles, setArticles] = useState([]);
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
         `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
       );
-      setArticels(response.data.articles);
+      setArticles(response.data.articles);
     };
     getArticles();
   }, []);
