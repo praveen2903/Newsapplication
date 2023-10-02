@@ -9,7 +9,6 @@ const FilmsFeed = () => {
         `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=3f05685cd43947b58042017c85341816`
       );
       setArticels(response.data.articles);
-      console.log(response);
     };
     getArticles();
   }, []);

@@ -9,7 +9,6 @@ const BusinessFeed = () => {
         `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
       );
       setArticels(response.data.articles);
-      console.log(response);
     };
     getArticles();
   }, []);

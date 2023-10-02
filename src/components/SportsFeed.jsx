@@ -9,7 +9,6 @@ const SportsFeed = () => {
         `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=cfab0c3a07d74569bf447dc98d170f69`
       );
       setArticels(response.data.articles);
-      console.log(response);
     };
     getArticles();
   }, []);

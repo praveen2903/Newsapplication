@@ -10,7 +10,6 @@ useEffect(() => {
         `https://newsapi.org/v2/top-headlines?country=in&apiKey=cdf1a1388df548748311ad11ad33c337`
     );
     setArticels(response.data.articles);
-    console.log(response);
     };
     getArticles();
 }, []);

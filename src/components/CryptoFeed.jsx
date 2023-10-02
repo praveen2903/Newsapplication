@@ -9,7 +9,6 @@ const CryptoFeed = () => {
         `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=6646b607329043ee82edb98d532d8f60`
       );
       setArticels(response.data.articles);
-      console.log(response);
     };
     getArticles();
   }, []);
