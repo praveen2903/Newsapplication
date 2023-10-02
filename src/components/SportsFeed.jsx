@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NewsFeed from "./NewsFeed";
+
 const SportsFeed = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
