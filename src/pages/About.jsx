@@ -12,6 +12,7 @@ function About() {
             </div>
             <div>
                 published the app with source code at ..
+                <a href="https://github.com/praveen2903/Newsapplication">Click here to visit code</a>
             </div>
         </div>
 
