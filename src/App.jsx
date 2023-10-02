@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <div className="p-5 font-serif text-2xl mb-3 space-x-6 underline text-red-400 overflow-x-auto items-center grid grid-flow-col place-items-center">
+      <div className="p-5 font-serif text-2xl mb-3 space-x-6 underline text-red-400 overflow-x-auto items-center grid grid-flow-col place-items-center bg-[#fbbf24]">
         <Link to="/Sports" className="">
           Sports
         </Link>
