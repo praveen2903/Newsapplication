@@ -7,7 +7,7 @@ const Films = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
+        `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=5dff31037ade4d979a51175cbed18e2e`
       );
       setArticles(response.data.articles);
     };

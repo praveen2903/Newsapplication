@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Business from "./pages/Business";
 import Politics from "./pages/Politics";
 import FilmsEntertainment from "./pages/Films";
-import Crypto from "./pages/Crypto";
+import Technology from "./pages/Technology";
 import Sports from "./pages/Sports";
 import Navbar from "./components/NavBar";
 
@@ -26,8 +26,8 @@ function App() {
         <Link to="/Films" className="">
           Films
         </Link>
-        <Link to="/Crypto" className="">
-          Crypto
+        <Link to="/Tech" className="">
+          Technology
         </Link>
       </div>
       <Routes>
@@ -36,7 +36,7 @@ function App() {
         <Route path="/Business" element={<Business />} />
         <Route path="/Politics" element={<Politics />} />
         <Route path="/Films" element={<FilmsEntertainment />} />
-        <Route path="/Crypto" element={<Crypto />} />
+        <Route path="/Tech" element={<Technology />} />
         <Route path="/Sports" element={<Sports />} />
       </Routes>
     </Router>

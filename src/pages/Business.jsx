@@ -16,7 +16,7 @@ const Business = () => {
   
   return (
     <div>
-      <h1>Business</h1>
+      <h1 className="text-3xl items-center justify-center">Business</h1>
       {articles.map((article) => {
         return (
           <NewsFeed

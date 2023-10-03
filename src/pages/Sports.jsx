@@ -7,7 +7,7 @@ const Sports = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
+        `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=ba4304b5f78f4ed1b24c2290d82e24bc`
       );
       setArticles(response.data.articles);
     };

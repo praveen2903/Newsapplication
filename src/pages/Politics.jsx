@@ -8,7 +8,7 @@ const Politics = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
+        `https://newsapi.org/v2/top-headlines?country=in&category=politics&apiKey=5a76da2a216f4b0f81027dbcbd668bcb`
       );
       setArticles(response.data.articles);
     };

@@ -7,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2265d216b99e46d895797bfc181a42cd`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=844ec1ea386546de99d06bc9e1a1a943`
       );
       setArticles(response.data.articles);
     };
