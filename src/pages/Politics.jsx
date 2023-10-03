@@ -21,6 +21,7 @@ const Politics = () => {
       {articles.map((article) => {
         return (
           <NewsFeed
+            key={article.url}
             title={article.title}
             description={article.description}
             url={article.url}

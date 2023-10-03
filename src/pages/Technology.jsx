@@ -21,6 +21,7 @@ const Technology = () => {
       {articles.map((article) => {
         return (
           <NewsFeed
+            
             title={article.title}
             description={article.description}
             url={article.url}
