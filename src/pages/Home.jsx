@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import NewsFeed from "../components/NewsFeed";
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -17,18 +16,24 @@ const Home = () => {
   return (
     <div>
       <h1 className="text-3xl text-center">Home</h1>
-      {articles.map((article) => {
-        return (
-          <NewsFeed
-            key={article.url}
-            title={article.title}
-            description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage}
-            author={article.author}
-          />
-        );
-      })}
+      <div>
+        {articles.map((article) => {
+          return (
+            <div className="grid justify-center place-items-center m-5 p-5 border rounded-lg shadow-md bg-slate-500 text-white text-xl md:text-4xl hover:bg-blue-300">
+              <a href={article.url}>
+                <img className=" md:w-4/5 justify-center items-center rounded-lg" src={article.urlToImage} alt=""/>
+                  <div className="relative">
+                    <div className="md:text-xl underline mb-2">{article.title}</div>
+                    <div className="text-xs md:text-sm">{article.description}</div>
+                    <div className="text-xl text-red-500">{article.author}</div>
+                  </div>
+              </a>
+            </div>
+          );
+        })}
+        
+      </div>
+      
     </div>
   );
 }
