@@ -16,7 +16,7 @@ const Films = () => {
   
   return (
     <div>
-      <h1>Films</h1>
+      <h1 className="text-3xl text-center">Films</h1>
       {articles.map((article) => {
         return (
           <NewsFeed

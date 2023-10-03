@@ -16,7 +16,7 @@ const Sports = () => {
   
   return (
     <div>
-      <h1>Sports</h1>
+      <h1 className="text-3xl text-center">Sports</h1>
       {articles.map((article) => {
         return (
           <NewsFeed
