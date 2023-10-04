@@ -1,11 +1,12 @@
 import NewsFeed from "../components/NewsFeed";
 
 const Politics = () => {
-  const name="general";
+  const name="health";
+  const id=4;
   return (
     <div>
-      <h1 className="text-3xl text-center">Politics</h1>
-      <NewsFeed category={name}/>
+      <h1 className="text-3xl text-center">Health</h1>
+      <NewsFeed id={id} category={name}/>
       
     </div>
   );

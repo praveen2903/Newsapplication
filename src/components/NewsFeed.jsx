@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const NewsFeed = ({category}) => {
+const NewsFeed = ({id, category}) => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     const getArticles = async () => {
@@ -15,10 +15,10 @@ const NewsFeed = ({category}) => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full justify-center items-center">
       {articles.map((article) => {
         return (
-          <div className="grid justify-center place-items-center m-5 p-5 border rounded-lg shadow-md bg-slate-500 text-white text-xl md:text-4xl hover:bg-blue-300">
+          <div key={id} className="grid justify-center place-items-center m-10 p-10 border rounded-lg shadow-md bg-slate-500 text-white text-xl md:text-4xl hover:bg-blue-300">
             <a href={article.url}>
               <img className=" md:w-4/5 justify-center items-center rounded-lg" src={article.urlToImage} alt=""/>
                 <div className="relative">

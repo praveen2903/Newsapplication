@@ -20,8 +20,8 @@ function App() {
         <Link to="/Business" className="">
           Business
         </Link>
-        <Link to="/Politics" className="">
-          Politics
+        <Link to="/Health" className="">
+          Health
         </Link>
         <Link to="/Films" className="">
           Films
@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Business" element={<Business />} />
-        <Route path="/Politics" element={<Politics />} />
+        <Route path="/Health" element={<Politics />} />
         <Route path="/Films" element={<FilmsEntertainment />} />
         <Route path="/Tech" element={<Technology />} />
         <Route path="/Sports" element={<Sports />} />
